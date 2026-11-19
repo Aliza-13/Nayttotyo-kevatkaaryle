@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: red;
+}
+
+/*navigaatiot*/
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/springrolls.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 55px;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    padding: 0 5%;
+    height: auto;
+    min-height: 80px;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: red;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .price-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-box {
+    width: 100%;
+  }
+
+  .price-page {
+    padding: 30px 5%;
+  }
+}
+
+/* Hinnastot */
+.price-page {
+  min-height: calc(100vh - 80px);
+  background-color: #8b0000;
+  padding: 50px 8%;
+}
+
+.price-title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.price-box {
+  background-color: white;
+  color: black;
+  width: 50%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.price-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.price-box ul {
+  list-style: none;
+}
+
+.price-box li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 17px;
+}
+
+.price-info {
+  color: black;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 17px;
+}
+
+/* resepti + ruokasivu */
+
+.food-page {
+  min-height: calc(100vh - 80px);
+  background-color: #8b0000;
+  padding: 50px 8%;
+  font-family: Arial, sans-serif;
+}
+
+.food-title {
+  color: white;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.food-subtitle {
+  color: #ffe545;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+/* asettelua */
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 35px;
+}
+
+/* lista/laatikko */
+
+.food-card {
+  background-color: white;
+  color: #333;
+  width: 50%;
+  max-width: 500px;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.food-card h2 {
+  color: #8b0000;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #8b0000;
+}
+
+.food-description {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Ainesosat */
+
+.ingredient-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredient-list li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #fff0f0;
+  border-radius: 8px;
+}
+
+/* Valmistusohjeita */
+
+.preparation-list {
+  padding-left: 25px;
+}
+.prepation-list li {
+  padding: 8px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Vinkki asiakkaalle */
+
+.food-tip {
+  background-color: #fff0f0;
+  border-left: 4px solid #8b0000;
+  padding: 18px;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+
+.food-tip h3 {
+  color: #8b0000;
+  margin-bottom: 8px;
+}
+
+.food-tip p {
+  line-height: 1.5;
+}
+
+/*Mobiili*/
+@media (max-width: 760px) {
+  .food-page {
+    padding: 30px 5%;
+  }
+
+  .food-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .food-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .food-title {
+    font-size: 30px;
+  }
+}
+
+.place-page {
+  min-height: calc(100vh - 80px);
+  background-color: #8b0000;
+  padding: 50px 8%;
+  font-family: Arial, sans-serif;
+}
+
+.place-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.place-item {
+  padding: 12px;
+  background-color: #fff0f0;
+  border-radius: 8px;
+}
+
+.place-map h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.place-map img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.map-image {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.map-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.map-marker {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  color: red;
+  font-size: 35px;
+  transform: translate(-50%, -50%);
+}
+
+/*Myyntipäivät*/
+
+.place-next {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.place-next h2 {
+  color: #8b0000;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.next-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.next-info p {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.next-info p:last-child {
+  margin-bottom: 0;
+}
